@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs
+title="Test Gadget"
+author="Andrei Maxim Valasutean"
+thumbnail="https://route_to_.png"
+screenshot="https://route_to.png"
+description="Test Gadget">
+ 
+<Require feature="minimessage" />
+<Require feature="dynamic-height" />
+<Require feature="auth-refresh"/>
+<Require feature="oauthpopup" />
+<Require feature="setprefs" />
+<Require feature="settitle" />
+<Require feature="core" />
+<Require feature="core.io" />
+<Require feature="views" />
+<Optional feature="atlassian.util" />
+<Optional feature="gadget-directory">
+<Param name="categories">Other</Param>
+</Optional>
+</ModulePrefs>
+ 
+<Content type="html">
+<![CDATA[
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+ document.getElementById("versionGadgetContainer").innerHTML= "test gadget";
+</script>
+<div id="versionGadgetContainer"></div>
+]]>
+</Content>
+</Module>
